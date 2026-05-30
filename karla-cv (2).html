@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CV for Karla Hornum Wohlert, folkesundhedsvidenskabsstuderende og junior konsulent.">
+  <title>Karla Hornum Wohlert — CV</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #fafaf8;
+      --text: #1c1c1a;
+      --muted: #6b6b65;
+      --faint: #a8a89e;
+      --line: #e2e0d8;
+      --accent: #2c4a3e;
+      --tag-bg: #f0ede6;
+    }
+
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--bg);
+      border-bottom: 1px solid var(--line);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.75rem 3rem;
+    }
+
+    .nav-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 15px;
+      font-weight: 400;
+      color: var(--muted);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+    }
+
+    .nav-links a {
+      font-size: 12px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--faint);
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover { color: var(--text); }
+
+    /* ── HERO ── */
+    .hero {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 5rem 3rem 3rem;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .hero-label {
+      font-size: 11px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--faint);
+      font-weight: 500;
+      margin-bottom: 1.2rem;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.8rem, 6vw, 5rem);
+      font-weight: 400;
+      line-height: 1.05;
+      letter-spacing: -0.01em;
+      margin-bottom: 1.2rem;
+    }
+
+    .hero-tagline {
+      font-size: 13px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      font-weight: 300;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .hero-contact a {
+      border-bottom: 1px solid var(--line);
+      transition: border-color 0.2s;
+    }
+    .hero-contact a:hover { border-color: var(--text); }
+
+    /* ── PAGE LAYOUT ── */
+    .page {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 3rem 5rem;
+    }
+
+    /* ── SECTIONS ── */
+    .section {
+      padding: 3rem 0;
+      border-bottom: 1px solid var(--line);
+      display: grid;
+      grid-template-columns: 180px 1fr;
+      gap: 0 3rem;
+    }
+
+    .section-label {
+      font-size: 10.5px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--faint);
+      font-weight: 500;
+      padding-top: 0.3rem;
+    }
+
+    /* ── PROFIL ── */
+    .profile-text {
+      font-size: 15px;
+      color: var(--muted);
+      line-height: 1.75;
+      max-width: 520px;
+      margin-bottom: 1.2rem;
+    }
+
+    .toolbox-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 13px;
+      color: var(--accent);
+      border-bottom: 1px dashed var(--accent);
+      transition: opacity 0.2s;
+    }
+    .toolbox-link:hover { opacity: 0.7; }
+
+    /* ── ENTRIES ── */
+    .entries { display: flex; flex-direction: column; }
+
+    .entry {
+      padding: 1.4rem 0;
+      border-top: 1px solid var(--line);
+      display: grid;
+      grid-template-columns: 105px 1fr;
+      gap: 0 1.5rem;
+    }
+    .entry:first-child { border-top: none; padding-top: 0; }
+
+    .year {
+      font-size: 12px;
+      color: var(--faint);
+      padding-top: 0.25rem;
+      font-weight: 300;
+      line-height: 1.5;
+    }
+
+    .entry-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 17px;
+      font-weight: 400;
+      margin-bottom: 0.15rem;
+    }
+
+    .entry-org {
+      font-size: 11.5px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+    }
+
+    .entry-desc {
+      font-size: 13.5px;
+      color: var(--muted);
+      line-height: 1.65;
+    }
+
+    /* ── TAGS ── */
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: 0.75rem;
+    }
+
+    .tag {
+      font-size: 11.5px;
+      color: var(--muted);
+      background: var(--tag-bg);
+      padding: 0.25rem 0.65rem;
+      border-radius: 2px;
+    }
+
+    /* ── VÆRKTØJER ── */
+    .tools-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 2rem;
+    }
+
+    .tool-group-title {
+      font-size: 10.5px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--faint);
+      font-weight: 500;
+      margin-bottom: 0.75rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .tool-item {
+      margin-bottom: 0.5rem;
+    }
+
+    .tool-name {
+      font-size: 13.5px;
+      font-weight: 500;
+      color: var(--text);
+    }
+
+    .tool-desc {
+      font-size: 12px;
+      color: var(--faint);
+    }
+
+    /* ── HOBBYER ── */
+    .hobbies-section {
+      margin-top: 2.5rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--line);
+      display: grid;
+      grid-template-columns: 180px 1fr;
+      gap: 0 3rem;
+    }
+
+    .hobby-list {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
+
+    .hobby-list li {
+      font-size: 13px;
+      color: var(--muted);
+      background: var(--tag-bg);
+      padding: 0.25rem 0.65rem;
+      border-radius: 2px;
+    }
+
+    /* ── KURSER ── */
+    .kurser-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 1.5rem 3rem;
+      font-size: 12px;
+      color: var(--faint);
+      display: flex;
+      justify-content: space-between;
+      border-top: 1px solid var(--line);
+    }
+
+    /* ── MOBIL ── */
+    @media (max-width: 640px) {
+      nav { padding: 0.75rem 1.5rem; }
+      .nav-name { display: none; }
+      .hero, .page, footer { padding-left: 1.5rem; padding-right: 1.5rem; }
+      .hero { padding-top: 2.5rem; }
+      .section { grid-template-columns: 1fr; gap: 0.6rem; }
+      .entry { grid-template-columns: 1fr; gap: 0.1rem; }
+      .tools-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+      .hobbies-section { grid-template-columns: 1fr; gap: 0.6rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <span class="nav-name">Karla Hornum Wohlert</span>
+    <div class="nav-links">
+      <a href="#profil">Profil</a>
+      <a href="#erfaring">Erfaring</a>
+      <a href="#uddannelse">Uddannelse</a>
+      <a href="#vaerktoejer">Værktøjer</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <p class="hero-label">Curriculum Vitae</p>
+    <h1>Karla Hornum<br>Wohlert</h1>
+    <p class="hero-tagline">Folkesundhedsvidenskab &middot; Junior Konsulent</p>
+    <div class="hero-contact">
+      <a href="mailto:Karlahornum@gmail.com">Karlahornum@gmail.com</a>
+      <a href="tel:+4530281474">+45 30 28 14 74</a>
+      <a href="https://www.linkedin.com/in/karla-hornum-wohlert-4026841bb" target="_blank">LinkedIn</a>
+      <span>Østerbrogade 140, 2100 København Ø</span>
+    </div>
+  </header>
+
+  <div class="page">
+
+    <!-- PROFIL -->
+    <div class="section" id="profil">
+      <span class="section-label">Profil</span>
+      <div>
+        <p class="profile-text">
+          Jeg er udadvendt og imødekommende og trives godt blandt andre mennesker.
+          En af mine personlige kvaliteter er min omsorg og opmærksomhed over for mine omgivelser —
+          jeg er god til at læse de mennesker, der er omkring mig, lytte og indgå i samarbejde.
+        </p>
+        <p class="profile-text">
+          Jeg er et ambitiøst og pligtopfyldende menneske, der drives af udfordringer og ønsket om
+          personlig udvikling. Jeg arbejder effektivt og struktureret og sætter en ære i at yde
+          et godt stykke arbejde. Som tidligere elite-tennisspiller ved jeg, hvad det vil sige at
+          arbejde målrettet og vedholdende.
+        </p>
+        <a class="toolbox-link" href="#vaerktoejer">Se Karlas værktøjskasse &darr;</a>
+      </div>
+    </div>
+
+    <!-- ERFARING -->
+    <div class="section" id="erfaring">
+      <span class="section-label">Erfaring</span>
+      <div class="entries">
+
+        <div class="entry">
+          <span class="year">2025 – nu</span>
+          <div>
+            <div class="entry-title">Junior Konsulent</div>
+            <div class="entry-org">Not a Box &middot; København</div>
+            <p class="entry-desc">
+              Gennemfører landskabs-, kultur- og markedsanalyser samt kvalitative interviewanalyser
+              og desk research. Udarbejder fondsansøgninger og projektbeskrivelser i samarbejde med
+              eksterne kunder. Bidrager til design og facilitering af workshops på projekter som
+              Sociale henvisninger og Natur på recept.
+            </p>
+            <div class="tags">
+              <span class="tag">Markedsanalyse</span>
+              <span class="tag">Fondsansøgninger</span>
+              <span class="tag">Workshop-facilitering</span>
+              <span class="tag">Desk research</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="entry">
+          <span class="year">2024 – 2025</span>
+          <div>
+            <div class="entry-title">Studentermedhjælper</div>
+            <div class="entry-org">Hjerteforeningen &middot; København</div>
+            <p class="entry-desc">
+              Administrativt arbejde, kommunikation og datatilpasning i Excel.
+              Holdt oplæg for frivillige medarbejdere og løste selvstændige opgaver
+              inden for problemløsning og initiativtagning.
+            </p>
+            <div class="tags">
+              <span class="tag">Excel</span>
+              <span class="tag">Kommunikation</span>
+              <span class="tag">Oplæg</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="entry">
+          <span class="year">2022 – 2024</span>
+          <div>
+            <div class="entry-title">Tilkaldevikar</div>
+            <div class="entry-org">Børnehuset Krummerne</div>
+            <p class="entry-desc">
+              Tilpasningsevner til skiftende arbejdsmiljøer og stærk tidsstyringsevne.
+            </p>
+          </div>
+        </div>
+
+        <div class="entry">
+          <span class="year">2020 – 2021</span>
+          <div>
+            <div class="entry-title">Pædagogmedhjælper</div>
+            <div class="entry-org">Børnehuset Columbus</div>
+            <p class="entry-desc">
+              Ansvarlighed, rummelighed og konflikthåndtering i arbejdet med børn og pædagoger.
+            </p>
+          </div>
+        </div>
+
+        <div class="entry">
+          <span class="year">2019 – 2020</span>
+          <div>
+            <div class="entry-title">Tjener og køkkenassistent</div>
+            <div class="entry-org">Naturtørst</div>
+            <p class="entry-desc">Kundeservice, salg og overblik i travl restaurantdrift.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- UDDANNELSE -->
+    <div class="section" id="uddannelse">
+      <span class="section-label">Uddannelse</span>
+      <div class="entries">
+
+        <div class="entry">
+          <span class="year">2022 – 2027<br>(forventet)</span>
+          <div>
+            <div class="entry-title">Kandidat & bachelor i Folkesundhedsvidenskab</div>
+            <div class="entry-org">Københavns Universitet</div>
+            <p class="entry-desc">
+              Erhvervspraktik hos Not A Box (6. sem.). Bachelorprojekt om mænds anvendelse af
+              sundhedsinformation og digitale teknologier i relation til hjerte-kar-sygdomme.
+            </p>
+            <div class="tags">
+              <span class="tag">Epidemiologi</span>
+              <span class="tag">Sundhedsøkonomi</span>
+              <span class="tag">Kvalitative metoder</span>
+              <span class="tag">Statistik</span>
+              <span class="tag">Global sundhed</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="entry">
+          <span class="year">2017 – 2020</span>
+          <div>
+            <div class="entry-title">Bioteknologi (STX)</div>
+            <div class="entry-org">Gefion Gymnasium</div>
+            <p class="entry-desc">
+              Laboratorieerfaring, analytiske og matematiske evner, dataanalyse og
+              projektorienteret samarbejde.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- KURSER -->
+    <div class="section">
+      <span class="section-label">Kurser & andet</span>
+      <div class="entries">
+
+        <div class="entry">
+          <span class="year">2018 – 2019</span>
+          <div>
+            <div class="entry-title">Science Talenter</div>
+            <div class="entry-org">Astra / Novo Nordisk Fonden</div>
+            <p class="entry-desc">Udvalgt til 3 talentudviklings-camps hos Mærsk Mc-Kinney Møller Videncenter i Sorø.</p>
+          </div>
+        </div>
+
+        <div class="entry">
+          <span class="year">2016 – 2017</span>
+          <div>
+            <div class="entry-title">Projektlederuddannelse</div>
+            <div class="entry-org">Ryslinge Efterskole</div>
+            <p class="entry-desc">Fire intensive projektforløb med SWOT-analyse, budgetlægning, retorik og pitch talks.</p>
+          </div>
+        </div>
+
+        <div class="entry">
+          <span class="year">2021</span>
+          <div>
+            <div class="entry-title">Højskole – Friluftsliv og Kloden Kalder</div>
+            <div class="entry-org">Ry Højskole</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- VÆRKTØJER -->
+    <div class="section" id="vaerktoejer">
+      <span class="section-label">Værktøjer</span>
+      <div>
+        <div class="tools-grid">
+
+          <div>
+            <div class="tool-group-title">IT & Software</div>
+            <div class="tool-item">
+              <div class="tool-name">Office-pakken</div>
+              <div class="tool-desc">Word, Excel, PowerPoint</div>
+            </div>
+            <div class="tool-item">
+              <div class="tool-name">R Studio</div>
+              <div class="tool-desc">Statistik og dataanalyse</div>
+            </div>
+            <div class="tool-item">
+              <div class="tool-name">Maple</div>
+              <div class="tool-desc">Matematisk software</div>
+            </div>
+          </div>
+
+          <div>
+            <div class="tool-group-title">Metoder</div>
+            <div class="tool-item">
+              <div class="tool-name">Litteratursøgning</div>
+              <div class="tool-desc">PubMed, Scopus, Web of Science</div>
+            </div>
+            <div class="tool-item">
+              <div class="tool-name">Kvalitative metoder</div>
+              <div class="tool-desc">Interviews og analyse</div>
+            </div>
+            <div class="tool-item">
+              <div class="tool-name">Kvantitative metoder</div>
+              <div class="tool-desc">Statistik og epidemiologi</div>
+            </div>
+          </div>
+
+          <div>
+            <div class="tool-group-title">AI & Kommunikation</div>
+            <div class="tool-item">
+              <div class="tool-name">AI-værktøjer</div>
+              <div class="tool-desc">ChatGPT, Gamma, Copilot</div>
+            </div>
+            <div class="tool-item">
+              <div class="tool-name">Rapportskrivning</div>
+              <div class="tool-desc">Akademisk og formidlende</div>
+            </div>
+            <div class="tool-item">
+              <div class="tool-name">Præsentationer</div>
+              <div class="tool-desc">PowerPoint og Gamma</div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="hobbies-section">
+          <span class="section-label">Hobbyer</span>
+          <ul class="hobby-list">
+            <li>Tennis <em style="font-size:11px;color:var(--faint)">– tidligere elitespiller</em></li>
+            <li>Sankning</li>
+            <li>Lystfiskeri</li>
+            <li>Kajak</li>
+            <li>Klatring</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <span>Karla Hornum Wohlert &middot; København</span>
+    <span>Sidst opdateret 2025</span>
+  </footer>
+
+</body>
+</html>
