@@ -62,18 +62,19 @@
       font-size: clamp(5rem, 14vw, 11rem);
       font-weight: 700;
       letter-spacing: -0.02em;
-      color: var(--text);
+      color: transparent;
+      -webkit-text-stroke: 1.5px var(--text);
     }
 
-    /* Outline-stil på efternavnet */
+    /* Udfyldt stil på efternavnet */
     .hero-name .last {
       display: block;
       font-family: 'Playfair Display', serif;
       font-size: clamp(5rem, 14vw, 11rem);
       font-weight: 700;
       letter-spacing: -0.02em;
-      color: transparent;
-      -webkit-text-stroke: 1.5px var(--text);
+      color: #305C5C;
+      -webkit-text-stroke: 0;
     }
 
     .hero-bottom {
@@ -353,13 +354,13 @@
     <div class="nav-links">
       <a href="#selected-work">Work</a>
       <a href="#about">About</a>
-      <a href="#experience">Experience</a>
+      <a href="#about">Education &amp; Skills</a>
     </div>
   </nav>
 
   <!-- HERO -->
   <header class="hero">
-    <p class="hero-label">Portfolio &amp; CV — 2025</p>
+    <p class="hero-label">Portfolio &amp; CV · 2026</p>
     <div class="hero-name">
       <span class="first">Karla</span>
       <span class="last">Wohlert</span>
@@ -378,7 +379,7 @@
   <div class="section-block" id="selected-work">
     <div class="section-header">
       <h2 class="section-title">Selected Work</h2>
-      <span class="section-subtitle">04 projects</span>
+      <span class="section-subtitle">04 Focus Areas</span>
     </div>
 
     <div class="projects-grid">
@@ -387,16 +388,16 @@
       <div class="project-card" onclick="toggleProject(this)">
         <div class="project-img">
           <!-- Udskift src="" med dit billede, fx src="hjerteforeningen.jpg" -->
-          <img src="" alt="Hjerteforeningen">
+          <img src="" alt="The Danish Heart Foundation">
           <span class="project-num">01</span>
         </div>
         <div class="project-info">
-          <div class="project-title">Hjerteforeningen</div>
-          <div class="project-org">Student Assistant · 2024–2025</div>
+          <div class="project-title">The Danish Heart Foundation</div>
+          <div class="project-org">Health Design Research</div>
           <div class="project-tags">
-            <span class="project-tag">Administration</span>
-            <span class="project-tag">Communication</span>
-            <span class="project-tag">Excel</span>
+            <span class="project-tag">Ongoing Collaboration</span>
+            <span class="project-tag">Iterative Process</span>
+            <span class="project-tag">Stakeholder Dialogue</span>
           </div>
           <div class="project-toggle">
             <span class="project-arrow">↓</span> Read more
@@ -405,7 +406,7 @@
         <div class="project-detail">
           <div class="project-detail-inner">
             <strong>About</strong>
-            Administrative work, communication and data management in Excel. Presented to volunteer staff and solved independent tasks within problem-solving and initiative.
+            Ongoing collaboration with The Danish Heart Foundation focused on health design research. Participating in continuous project development, stakeholder meetings and iterative processes aimed at creating meaningful and evidence-informed solutions.
           </div>
         </div>
       </div>
@@ -413,16 +414,16 @@
       <!-- 02 AUSTRALIEN -->
       <div class="project-card" onclick="toggleProject(this)">
         <div class="project-img">
-          <img src="" alt="Exchange — Australia">
+          <img src="" alt="Australia">
           <span class="project-num">02</span>
         </div>
         <div class="project-info">
-          <div class="project-title">Exchange — Australia</div>
-          <div class="project-org">Study Abroad · 2024</div>
+          <div class="project-title">Australia</div>
+          <div class="project-org">Monash University · 2026</div>
           <div class="project-tags">
-            <span class="project-tag">Int. Relations</span>
-            <span class="project-tag">Global Health</span>
-            <span class="project-tag">Melbourne</span>
+            <span class="project-tag">International Politics</span>
+            <span class="project-tag">Environmental Analysis</span>
+            <span class="project-tag">Global Perspective</span>
           </div>
           <div class="project-toggle">
             <span class="project-arrow">↓</span> Read more
@@ -431,7 +432,7 @@
         <div class="project-detail">
           <div class="project-detail-inner">
             <strong>About</strong>
-            8th semester exchange at RMIT University in Melbourne. Courses in Environmental Analysis, Foundations of International Relations, Conflict, Security and Development, and Peacekeeping in the International System.
+            International exchange semester at Monash University in Melbourne. Focus on international politics, environmental analysis and global perspectives on contemporary societal challenges.
           </div>
         </div>
       </div>
@@ -446,9 +447,9 @@
           <div class="project-title">Not a Box</div>
           <div class="project-org">Junior Consultant · 2025–present</div>
           <div class="project-tags">
-            <span class="project-tag">Analysis</span>
-            <span class="project-tag">Strategy</span>
-            <span class="project-tag">Health</span>
+            <span class="project-tag">Landscape Analysis</span>
+            <span class="project-tag">Desk Research</span>
+            <span class="project-tag">Workshop Design</span>
           </div>
           <div class="project-toggle">
             <span class="project-arrow">↓</span> Read more
@@ -456,23 +457,19 @@
         </div>
         <div class="project-detail">
           <div class="project-detail-inner">
-            <strong>Selected projects</strong>
+            <strong>Projects I have contributed to</strong>
             <div class="sub-projects">
               <div class="sub-project">
-                <div class="sub-project-name">Sociale henvisninger</div>
-                Landscape analysis and fund applications for social referral pathways in the Danish health system.
+                <div class="sub-project-name">Social Prescribing</div>
+                Landscape, cultural and market analyses, stakeholder mapping and strategic project development.
               </div>
               <div class="sub-project">
-                <div class="sub-project-name">Novo Nordisk Fonden</div>
-                Research and desk analysis in collaboration with external clients.
+                <div class="sub-project-name">Nature on Prescription</div>
+                Workshop design, facilitation and development of strategic materials in collaboration with external partners.
               </div>
               <div class="sub-project">
-                <div class="sub-project-name">15. Juni Fonden — Reintegrating Nature in Healthcare</div>
-                Workshop design and strategic facilitation.
-              </div>
-              <div class="sub-project">
-                <div class="sub-project-name">BørnUngeLiv — Health Data Platform</div>
-                Strategy development for health data platform.
+                <div class="sub-project-name">Research &amp; Analysis</div>
+                Qualitative interview analysis, desk research, project descriptions and fund application development.
               </div>
             </div>
           </div>
@@ -486,12 +483,12 @@
           <span class="project-num">04</span>
         </div>
         <div class="project-info">
-          <div class="project-title">AI &amp; Digital Health</div>
-          <div class="project-org">Self-directed · Ongoing</div>
+          <div class="project-title">Internal AI Lead</div>
+          <div class="project-org">Not a Box · 2025–Present</div>
           <div class="project-tags">
-            <span class="project-tag">AI Tools</span>
-            <span class="project-tag">Web Dev</span>
-            <span class="project-tag">Digital Health</span>
+            <span class="project-tag">AI Workshops</span>
+            <span class="project-tag">AI Agents</span>
+            <span class="project-tag">Responsible AI</span>
           </div>
           <div class="project-toggle">
             <span class="project-arrow">↓</span> Read more
@@ -500,7 +497,7 @@
         <div class="project-detail">
           <div class="project-detail-inner">
             <strong>About</strong>
-            Practical experience with AI tools including ChatGPT, Gamma and Microsoft Copilot. Bachelor's thesis on men's use of digital health technologies in relation to cardiovascular disease. Self-built this portfolio website with no prior web development experience.
+            Responsible for internal AI initiatives including workshops, implementation of AI tools and development of AI agents for internal use. Focus on responsible implementation, ethical considerations and organisational learning.
           </div>
         </div>
       </div>
@@ -548,8 +545,8 @@
               <div class="about-item-sub">University of Copenhagen · 2025–2027</div>
             </div>
             <div class="about-item">
-              <div class="about-item-name">Exchange — RMIT University</div>
-              <div class="about-item-sub">Melbourne, Australia · 2024</div>
+              <div class="about-item-name">Exchange — Monash University</div>
+              <div class="about-item-sub">Melbourne, Australia · 2026</div>
             </div>
             <div class="about-item">
               <div class="about-item-name">Biotechnology (STX)</div>
@@ -571,23 +568,33 @@
             <div class="about-item" style="margin-top:1rem">
               <div class="about-item-name">Methods</div>
               <div class="skill-tags">
-                <span class="skill-tag">Qualitative research</span>
-                <span class="skill-tag">Quantitative methods</span>
+                <span class="skill-tag">Qualitative &amp; Quantitative Methods</span>
                 <span class="skill-tag">Epidemiology</span>
-                <span class="skill-tag">Literature review</span>
-                <span class="skill-tag">R Studio</span>
-                <span class="skill-tag">Statistical analysis</span>
+                <span class="skill-tag">Literature Review</span>
+                <span class="skill-tag">Desk Research</span>
+                <span class="skill-tag">Statistical Analysis</span>
+                <span class="skill-tag">EIA, LCA &amp; SEA</span>
+                <span class="skill-tag">Policy Brief Writing</span>
+                <span class="skill-tag">Landscape Analysis</span>
+                <span class="skill-tag">Presentation Design</span>
+                <span class="skill-tag">Fund Applications</span>
+                <span class="skill-tag">Mission Labs</span>
+                <span class="skill-tag">Conference Planning</span>
+                <span class="skill-tag">Workshop Facilitation</span>
+                <span class="skill-tag">Strategy Development</span>
               </div>
             </div>
 
             <div class="about-item" style="margin-top:1rem">
               <div class="about-item-name">Approaches</div>
               <div class="skill-tags">
-                <span class="skill-tag">Workshop facilitation</span>
-                <span class="skill-tag">Strategy development</span>
-                <span class="skill-tag">Fund applications</span>
-                <span class="skill-tag">Stakeholder engagement</span>
-                <span class="skill-tag">Science communication</span>
+                <span class="skill-tag">Holistic</span>
+                <span class="skill-tag">Iterative</span>
+                <span class="skill-tag">Human-Centred</span>
+                <span class="skill-tag">Systems Thinking</span>
+                <span class="skill-tag">Collaborative</span>
+                <span class="skill-tag">Evidence-Informed</span>
+                <span class="skill-tag">Strategic</span>
               </div>
             </div>
 
@@ -597,80 +604,8 @@
     </div>
   </div>
 
-  <!-- ERFARING + UDDANNELSE -->
-  <div class="two-col-section" id="experience">
-    <div class="col-block">
-      <div class="col-title">Experience</div>
-
-      <div class="entry">
-        <div class="entry-year">2025 – present</div>
-        <div class="entry-title">Junior Consultant</div>
-        <div class="entry-org">Not a Box · Copenhagen</div>
-        <div class="entry-desc">Landscape, cultural and market analyses, fund applications and workshop facilitation on health-related projects.</div>
-        <div class="entry-tags"><span class="entry-tag">Analysis</span><span class="entry-tag">Strategy</span><span class="entry-tag">Facilitation</span></div>
-      </div>
-
-      <div class="entry">
-        <div class="entry-year">2024 – 2025</div>
-        <div class="entry-title">Student Assistant</div>
-        <div class="entry-org">Hjerteforeningen · Copenhagen</div>
-        <div class="entry-desc">Administrative work, communication and data management in Excel. Presented to volunteer staff.</div>
-        <div class="entry-tags"><span class="entry-tag">Administration</span><span class="entry-tag">Excel</span></div>
-      </div>
-
-      <div class="entry">
-        <div class="entry-year">2022 – 2024</div>
-        <div class="entry-title">Supply Teacher</div>
-        <div class="entry-org">Børnehuset Krummerne</div>
-        <div class="entry-desc">Developed adaptability across different work environments and strong time management skills.</div>
-      </div>
-
-      <div class="entry">
-        <div class="entry-year">2020 – 2021</div>
-        <div class="entry-title">Pedagogue Assistant</div>
-        <div class="entry-org">Børnehuset Columbus</div>
-        <div class="entry-desc">Responsibility, inclusivity and conflict resolution working with children and educators.</div>
-      </div>
-
-      <div class="entry">
-        <div class="entry-year">2019 – 2020</div>
-        <div class="entry-title">Waiter &amp; Kitchen Assistant</div>
-        <div class="entry-org">Naturtørst</div>
-        <div class="entry-desc">Customer service, sales and coordination in a busy restaurant environment.</div>
-      </div>
-    </div>
-
-    <div class="col-block">
-      <div class="col-title">Courses &amp; Other</div>
-
-      <div class="entry">
-        <div class="entry-year">2018 – 2019</div>
-        <div class="entry-title">Science Talent Programme</div>
-        <div class="entry-org">Astra / Novo Nordisk Foundation</div>
-        <div class="entry-desc">Selected for 3 talent development camps at Mærsk Mc-Kinney Møller Knowledge Centre in Sorø.</div>
-        <div class="entry-tags"><span class="entry-tag">Natural Science</span><span class="entry-tag">Talent Development</span></div>
-      </div>
-
-      <div class="entry">
-        <div class="entry-year">2016 – 2017</div>
-        <div class="entry-title">Project Management Certificate</div>
-        <div class="entry-org">Ryslinge Efterskole</div>
-        <div class="entry-desc">Four intensive project courses covering SWOT analysis, budgeting, rhetoric and pitch talks.</div>
-        <div class="entry-tags"><span class="entry-tag">Project Management</span><span class="entry-tag">Strategy</span></div>
-      </div>
-
-      <div class="entry">
-        <div class="entry-year">2021</div>
-        <div class="entry-title">Folk High School — Outdoor Life</div>
-        <div class="entry-org">Ry Højskole</div>
-        <div class="entry-desc">Friluftsliv og Kloden Kalder — outdoor life and global perspectives.</div>
-      </div>
-
-    </div>
-  </div>
-
   <footer>
-    <span>Karla Hornum Wohlert &copy; 2025</span>
+    <span>Karla Hornum Wohlert &copy; 2026</span>
     <span>karlahornumwohlert.netlify.app</span>
   </footer>
 
