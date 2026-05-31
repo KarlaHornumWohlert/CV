@@ -4,25 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Karla Hornum Wohlert</title>
-  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg: #f7f3ec;
-      --text: #594640;
-      --muted: #7a625b;
-      --faint: #9a837a;
-      --line: rgba(89, 70, 64, 0.22);
-      --accent: #d94124;
-      --dark-brown: #594640;
-      --sage: #c7d2b8;
-      --sage-light: #dce4d0;
-      --orange: #d94124;
-      --dark-bg: #594640;
-      --dark-text: #c7d2b8;
-      --dark-muted: #dce4d0;
-      --dark-line: rgba(199, 210, 184, 0.26);
-      --tag-bg: rgba(89, 70, 64, 0.08);
+      --bg: #f0ede6;
+      --text: #6B173D;
+      --muted: #7d4a5d;
+      --faint: #9b6c7b;
+      --line: #d8d4cc;
+      --accent: #6B173D;
+      --burgundy: #6B173D;
+      --terracotta: #D9774E;
+      --dark-bg: #D9774E;
+      --dark-text: #6B173D;
+      --dark-muted: #7d4a5d;
+      --dark-line: rgba(107, 23, 61, 0.22);
+      --tag-bg: rgba(107, 23, 61, 0.08);
     }
+
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
     html { scroll-behavior: smooth; }
     body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); font-size: 15px; line-height: 1.7; }
@@ -31,14 +30,14 @@
     /* ── NAV ── */
     nav {
       position: sticky; top: 0; z-index: 100;
-      background: var(--dark-brown); border-bottom: 1px solid rgba(199, 210, 184, 0.25);
+      background: var(--burgundy); border-bottom: 1px solid rgba(217, 119, 78, 0.25);
       display: flex; justify-content: space-between; align-items: center;
       padding: 0.75rem 4rem;
     }
-    .nav-name { font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--sage); }
+    .nav-name { font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--terracotta); }
     .nav-links { display: flex; gap: 2rem; }
-    .nav-links a { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--sage); transition: opacity 0.2s; }
-    .nav-links a:hover { color: var(--sage); opacity: 0.7; }
+    .nav-links a { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--terracotta); transition: opacity 0.2s; }
+    .nav-links a:hover { color: var(--terracotta); opacity: 0.7; }
 
     /* ── HERO ── */
     .hero {
@@ -46,13 +45,13 @@
       padding: 6rem 4rem 5rem;
       border-bottom: none;
       overflow: hidden;
-      background: var(--dark-brown);
-      color: var(--sage);
+      background: var(--burgundy);
+      color: var(--terracotta);
     }
 
     .hero-label {
       font-size: 11px; letter-spacing: 0.25em; text-transform: uppercase;
-      color: var(--sage); font-weight: 400; margin-bottom: 2rem;
+      color: var(--terracotta); font-weight: 400; margin-bottom: 2rem;
     }
 
     /* Stort navn — to niveauer som Ida Rovsing-stilen */
@@ -63,22 +62,22 @@
 
     .hero-name .first {
       display: block;
-      font-family: 'Lora', serif;
-      font-size: clamp(7.5rem, 20vw, 16rem);
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(5rem, 14vw, 11rem);
       font-weight: 700;
       letter-spacing: -0.02em;
       color: transparent;
-      -webkit-text-stroke: 1.5px var(--orange);
+      -webkit-text-stroke: 1.5px var(--terracotta);
     }
 
     /* Udfyldt stil på efternavnet */
     .hero-name .last {
       display: block;
-      font-family: 'Lora', serif;
-      font-size: clamp(7.5rem, 20vw, 16rem);
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(5rem, 14vw, 11rem);
       font-weight: 700;
       letter-spacing: -0.02em;
-      color: var(--orange);
+      color: var(--terracotta);
       -webkit-text-stroke: 0;
     }
 
@@ -92,7 +91,7 @@
 
     .hero-tagline {
       font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase;
-      color: var(--sage); font-weight: 300;
+      color: var(--terracotta); font-weight: 300;
     }
 
     .hero-focus {
@@ -107,7 +106,7 @@
       font-size: 10px;
       letter-spacing: 0.22em;
       text-transform: uppercase;
-      color: var(--sage);
+      color: var(--terracotta);
       margin-right: 0.5rem;
     }
 
@@ -115,18 +114,18 @@
       font-size: 11px;
       letter-spacing: 0.08em;
       text-transform: uppercase;
-      color: var(--sage);
-      border: 1px solid rgba(199, 210, 184, 0.45);
+      color: var(--terracotta);
+      border: 1px solid rgba(217, 119, 78, 0.45);
       padding: 0.25rem 0.65rem;
       border-radius: 999px;
     }
 
     .hero-contact { display: flex; gap: 1.5rem; flex-wrap: wrap; }
     .hero-contact a {
-      font-size: 12px; color: var(--sage);
-      border-bottom: 1px solid rgba(199, 210, 184, 0.45); transition: opacity 0.2s;
+      font-size: 12px; color: var(--terracotta);
+      border-bottom: 1px solid rgba(217, 119, 78, 0.45); transition: opacity 0.2s;
     }
-    .hero-contact a:hover { color: var(--sage); opacity: 0.7; }
+    .hero-contact a:hover { color: var(--terracotta); opacity: 0.7; }
 
     /* ── SECTION WRAPPER ── */
     .section-block {
@@ -140,7 +139,7 @@
     }
 
     .section-title {
-      font-family: 'Lora', serif;
+      font-family: 'Playfair Display', serif;
       font-size: clamp(1.8rem, 4vw, 2.8rem);
       font-weight: 400; letter-spacing: -0.01em;
     }
@@ -210,7 +209,7 @@
     }
 
     .project-title {
-      font-family: 'Lora', serif;
+      font-family: 'Playfair Display', serif;
       font-size: clamp(2.2rem, 5vw, 4.4rem);
       font-weight: 400;
       line-height: 0.95;
@@ -270,14 +269,14 @@
 
     /* ── DARK SECTION — Om mig ── */
     .dark-section {
-      background: var(--sage);
-      color: var(--dark-brown);
+      background: var(--terracotta);
+      color: var(--burgundy);
       padding: 5rem 4rem;
       border-bottom: 1px solid var(--dark-line);
     }
 
-    .dark-section .section-title { color: var(--dark-brown); }
-    .dark-section .section-subtitle { color: rgba(89, 70, 64, 0.72); }
+    .dark-section .section-title { color: var(--burgundy); }
+    .dark-section .section-subtitle { color: rgba(107, 23, 61, 0.7); }
 
     .about-grid {
       display: grid;
@@ -290,7 +289,7 @@
     /* Foto */
     .about-photo {
       width: 100%; aspect-ratio: 3/4;
-      background: rgba(89, 70, 64, 0.12);
+      background: rgba(107, 23, 61, 0.12);
       overflow: hidden; position: relative;
       border-radius: 2px;
     }
@@ -305,22 +304,22 @@
       width: 100%; height: 100%;
       display: flex; align-items: center; justify-content: center;
       font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase;
-      color: rgba(89, 70, 64, 0.6);
+      color: rgba(107, 23, 61, 0.6);
     }
 
     .about-text { padding-top: 0.5rem; }
 
     .about-tagline {
-      font-family: 'Lora', serif;
+      font-family: 'Playfair Display', serif;
       font-size: clamp(1.4rem, 3vw, 2rem);
       font-weight: 400; font-style: italic;
-      color: var(--dark-brown);
+      color: var(--burgundy);
       margin-bottom: 2rem;
       line-height: 1.3;
     }
 
     .about-body {
-      font-size: 14.5px; color: var(--dark-brown);
+      font-size: 14.5px; color: var(--burgundy);
       line-height: 1.8; margin-bottom: 3rem;
     }
 
@@ -335,17 +334,17 @@
 
     .about-col-title {
       font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase;
-      color: rgba(89, 70, 64, 0.72); font-weight: 500; margin-bottom: 1rem;
+      color: rgba(107, 23, 61, 0.7); font-weight: 500; margin-bottom: 1rem;
     }
 
     .about-item { margin-bottom: 0.8rem; }
-    .about-item-name { font-size: 13px; font-weight: 500; color: var(--dark-brown); }
+    .about-item-name { font-size: 13px; font-weight: 500; color: var(--burgundy); }
     .about-item-sub { font-size: 12px; color: rgba(107, 23, 61, 0.75); }
 
     /* Skills tags i mørk sektion */
     .skill-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.4rem; }
     .skill-tag {
-      font-size: 11px; color: var(--dark-brown);
+      font-size: 11px; color: var(--burgundy);
       border: 1px solid rgba(107, 23, 61, 0.28); padding: 0.2rem 0.6rem; border-radius: 2px;
     }
 
@@ -371,7 +370,7 @@
     .entry:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
 
     .entry-year { font-size: 11px; color: var(--faint); margin-bottom: 0.2rem; }
-    .entry-title { font-family: 'Lora', serif; font-size: 15px; font-weight: 400; margin-bottom: 0.15rem; }
+    .entry-title { font-family: 'Playfair Display', serif; font-size: 15px; font-weight: 400; margin-bottom: 0.15rem; }
     .entry-org { font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 0.4rem; }
     .entry-desc { font-size: 13px; color: var(--muted); line-height: 1.6; }
     .entry-tags { display: flex; flex-wrap: wrap; gap: 0.3rem; margin-top: 0.6rem; }
@@ -379,7 +378,7 @@
 
     /* ── FOOTER ── */
     footer {
-      background: var(--dark-brown); color: var(--sage);
+      background: var(--burgundy); color: var(--terracotta);
       padding: 2rem 4rem;
       display: flex; justify-content: space-between;
       font-size: 11px; letter-spacing: 0.08em;
