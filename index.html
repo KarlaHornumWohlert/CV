@@ -4,24 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Karla Hornum Wohlert</title>
-  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg: #f7f3ec;
-      --text: #594640;
-      --muted: #7a625b;
-      --faint: #9a837a;
-      --line: rgba(89, 70, 64, 0.22);
-      --accent: #d94124;
-      --dark-brown: #594640;
-      --sage: #c7d2b8;
-      --sage-light: #dce4d0;
-      --orange: #d94124;
-      --dark-bg: #594640;
-      --dark-text: #c7d2b8;
-      --dark-muted: #dce4d0;
-      --dark-line: rgba(199, 210, 184, 0.26);
-      --tag-bg: rgba(89, 70, 64, 0.08);
+      --bg: #D9D9D9;
+      --text: #141414;
+      --muted: #4a4a4a;
+      --faint: #6f6f6f;
+      --line: rgba(20, 20, 20, 0.22);
+      --accent: #CF3030;
+      --dark-brown: #141414;
+      --light-grey: #D9D9D9;
+      --orange: #E88A1A;
+      --red: #CF3030;
+      --dark-bg: #141414;
+      --dark-text: #D9D9D9;
+      --dark-muted: #b8b8b8;
+      --dark-line: rgba(217, 217, 217, 0.25);
+      --tag-bg: rgba(20, 20, 20, 0.08);
     }
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
     html { scroll-behavior: smooth; }
@@ -31,14 +31,14 @@
     /* ── NAV ── */
     nav {
       position: sticky; top: 0; z-index: 100;
-      background: var(--dark-brown); border-bottom: 1px solid rgba(199, 210, 184, 0.25);
+      background: var(--dark-brown); border-bottom: 1px solid rgba(217, 217, 217, 0.25);
       display: flex; justify-content: space-between; align-items: center;
       padding: 0.75rem 4rem;
     }
-    .nav-name { font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--sage); }
+    .nav-name { font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--light-grey); }
     .nav-links { display: flex; gap: 2rem; }
-    .nav-links a { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--sage); transition: opacity 0.2s; }
-    .nav-links a:hover { color: var(--sage); opacity: 0.7; }
+    .nav-links a { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--light-grey); transition: opacity 0.2s; }
+    .nav-links a:hover { color: var(--light-grey); opacity: 0.7; }
 
     /* ── HERO ── */
     .hero {
@@ -47,12 +47,12 @@
       border-bottom: none;
       overflow: hidden;
       background: var(--dark-brown);
-      color: var(--sage);
+      color: var(--light-grey);
     }
 
     .hero-label {
       font-size: 11px; letter-spacing: 0.25em; text-transform: uppercase;
-      color: var(--sage); font-weight: 400; margin-bottom: 2rem;
+      color: var(--light-grey); font-weight: 400; margin-bottom: 2rem;
     }
 
     /* Stort navn — to niveauer som Ida Rovsing-stilen */
@@ -63,7 +63,7 @@
 
     .hero-name .first {
       display: block;
-      font-family: 'Lora', serif;
+      font-family: 'Roboto Slab', serif;
       font-size: clamp(7.5rem, 20vw, 16rem);
       font-weight: 700;
       letter-spacing: -0.02em;
@@ -74,7 +74,7 @@
     /* Udfyldt stil på efternavnet */
     .hero-name .last {
       display: block;
-      font-family: 'Lora', serif;
+      font-family: 'Roboto Slab', serif;
       font-size: clamp(7.5rem, 20vw, 16rem);
       font-weight: 700;
       letter-spacing: -0.02em;
@@ -92,7 +92,7 @@
 
     .hero-tagline {
       font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase;
-      color: var(--sage); font-weight: 300;
+      color: var(--light-grey); font-weight: 300;
     }
 
     .hero-focus {
@@ -107,7 +107,7 @@
       font-size: 10px;
       letter-spacing: 0.22em;
       text-transform: uppercase;
-      color: var(--sage);
+      color: var(--light-grey);
       margin-right: 0.5rem;
     }
 
@@ -115,18 +115,18 @@
       font-size: 11px;
       letter-spacing: 0.08em;
       text-transform: uppercase;
-      color: var(--sage);
-      border: 1px solid rgba(199, 210, 184, 0.45);
+      color: var(--light-grey);
+      border: 1px solid rgba(217, 217, 217, 0.45);
       padding: 0.25rem 0.65rem;
       border-radius: 999px;
     }
 
     .hero-contact { display: flex; gap: 1.5rem; flex-wrap: wrap; }
     .hero-contact a {
-      font-size: 12px; color: var(--sage);
-      border-bottom: 1px solid rgba(199, 210, 184, 0.45); transition: opacity 0.2s;
+      font-size: 12px; color: var(--light-grey);
+      border-bottom: 1px solid rgba(217, 217, 217, 0.45); transition: opacity 0.2s;
     }
-    .hero-contact a:hover { color: var(--sage); opacity: 0.7; }
+    .hero-contact a:hover { color: var(--light-grey); opacity: 0.7; }
 
     /* ── SECTION WRAPPER ── */
     .section-block {
@@ -140,7 +140,7 @@
     }
 
     .section-title {
-      font-family: 'Lora', serif;
+      font-family: 'Roboto Slab', serif;
       font-size: clamp(1.8rem, 4vw, 2.8rem);
       font-weight: 400; letter-spacing: -0.01em;
     }
@@ -167,7 +167,7 @@
       min-height: 430px;
     }
     .project-card:last-child { border-bottom: 1px solid var(--line); }
-    .project-card:hover { background: #ebe7df; }
+    .project-card:hover { background: #cfcfcf; }
 
     .project-img {
       width: 100%;
@@ -210,7 +210,7 @@
     }
 
     .project-title {
-      font-family: 'Lora', serif;
+      font-family: 'Roboto Slab', serif;
       font-size: clamp(2.2rem, 5vw, 4.4rem);
       font-weight: 400;
       line-height: 0.95;
@@ -232,7 +232,7 @@
 
     .project-toggle {
       font-size: 11px;
-      color: var(--muted);
+      color: var(--red);
       display: flex;
       align-items: center;
       gap: 0.3rem;
@@ -270,14 +270,14 @@
 
     /* ── DARK SECTION — Om mig ── */
     .dark-section {
-      background: var(--sage);
+      background: var(--light-grey);
       color: var(--dark-brown);
       padding: 5rem 4rem;
       border-bottom: 1px solid var(--dark-line);
     }
 
     .dark-section .section-title { color: var(--dark-brown); }
-    .dark-section .section-subtitle { color: rgba(89, 70, 64, 0.72); }
+    .dark-section .section-subtitle { color: rgba(20, 20, 20, 0.72); }
 
     .about-grid {
       display: grid;
@@ -290,7 +290,7 @@
     /* Foto */
     .about-photo {
       width: 100%; aspect-ratio: 3/4;
-      background: rgba(89, 70, 64, 0.12);
+      background: rgba(20, 20, 20, 0.12);
       overflow: hidden; position: relative;
       border-radius: 2px;
     }
@@ -305,13 +305,13 @@
       width: 100%; height: 100%;
       display: flex; align-items: center; justify-content: center;
       font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase;
-      color: rgba(89, 70, 64, 0.6);
+      color: rgba(20, 20, 20, 0.6);
     }
 
     .about-text { padding-top: 0.5rem; }
 
     .about-tagline {
-      font-family: 'Lora', serif;
+      font-family: 'Roboto Slab', serif;
       font-size: clamp(1.4rem, 3vw, 2rem);
       font-weight: 400; font-style: italic;
       color: var(--dark-brown);
@@ -335,18 +335,18 @@
 
     .about-col-title {
       font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase;
-      color: rgba(89, 70, 64, 0.72); font-weight: 500; margin-bottom: 1rem;
+      color: rgba(20, 20, 20, 0.72); font-weight: 500; margin-bottom: 1rem;
     }
 
     .about-item { margin-bottom: 0.8rem; }
     .about-item-name { font-size: 13px; font-weight: 500; color: var(--dark-brown); }
-    .about-item-sub { font-size: 12px; color: rgba(107, 23, 61, 0.75); }
+    .about-item-sub { font-size: 12px; color: rgba(20, 20, 20, 0.75); }
 
     /* Skills tags i mørk sektion */
     .skill-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.4rem; }
     .skill-tag {
       font-size: 11px; color: var(--dark-brown);
-      border: 1px solid rgba(107, 23, 61, 0.28); padding: 0.2rem 0.6rem; border-radius: 2px;
+      border: 1px solid rgba(20, 20, 20, 0.28); padding: 0.2rem 0.6rem; border-radius: 2px;
     }
 
     /* ── ERFARING + UDDANNELSE ── */
@@ -371,7 +371,7 @@
     .entry:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
 
     .entry-year { font-size: 11px; color: var(--faint); margin-bottom: 0.2rem; }
-    .entry-title { font-family: 'Lora', serif; font-size: 15px; font-weight: 400; margin-bottom: 0.15rem; }
+    .entry-title { font-family: 'Roboto Slab', serif; font-size: 15px; font-weight: 400; margin-bottom: 0.15rem; }
     .entry-org { font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 0.4rem; }
     .entry-desc { font-size: 13px; color: var(--muted); line-height: 1.6; }
     .entry-tags { display: flex; flex-wrap: wrap; gap: 0.3rem; margin-top: 0.6rem; }
@@ -379,7 +379,7 @@
 
     /* ── FOOTER ── */
     footer {
-      background: var(--dark-brown); color: var(--sage);
+      background: var(--dark-brown); color: var(--light-grey);
       padding: 2rem 4rem;
       display: flex; justify-content: space-between;
       font-size: 11px; letter-spacing: 0.08em;
@@ -572,7 +572,7 @@
   <!-- DARK — ABOUT -->
   <div class="dark-section" id="about">
     <div class="section-header">
-      <h2 class="section-title" style="color:var(--dark-text)">Perspective</h2>
+      <h2 class="section-title" style="color:var(--dark-brown)">Perspective</h2>
       <span class="section-subtitle">How I work</span>
     </div>
 
