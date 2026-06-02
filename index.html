@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Karla Hornum Wohlert</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
   <style>
     :root {
       --bg: #f0ede6;
@@ -37,13 +37,12 @@
     .nav-name { font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--terracotta); }
     .nav-links { display: flex; gap: 2rem; }
     .nav-links a { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--terracotta); transition: opacity 0.2s; }
-    .nav-links a:hover { color: var(--terracotta); opacity: 0.7; }
+    .nav-links a:hover { opacity: 0.7; }
 
     /* ── HERO ── */
     .hero {
       max-width: 100%;
-      padding: 6rem 4rem 5rem;
-      border-bottom: none;
+      padding: 5rem 4rem 4rem;
       overflow: hidden;
       background: var(--burgundy);
       color: var(--terracotta);
@@ -51,96 +50,89 @@
 
     .hero-label {
       font-size: 11px; letter-spacing: 0.25em; text-transform: uppercase;
-      color: var(--terracotta); font-weight: 400; margin-bottom: 2rem;
+      color: var(--terracotta); font-weight: 400; margin-bottom: 1.5rem;
+      opacity: 0.7;
     }
 
-    /* Stort navn — to niveauer som Ida Rovsing-stilen */
+    /* ── NAVN med Bebas Neue ── */
     .hero-name {
-      line-height: 0.9;
-      margin-bottom: 3rem;
+      line-height: 0.88;
+      margin-bottom: 2.5rem;
     }
 
     .hero-name .first {
       display: block;
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(5rem, 14vw, 11rem);
-      font-weight: 700;
-      letter-spacing: -0.02em;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(5rem, 13vw, 10rem);
+      letter-spacing: 0.03em;
       color: transparent;
       -webkit-text-stroke: 1.5px var(--terracotta);
     }
 
-    /* Udfyldt stil på efternavnet */
+    .hero-name .middle {
+      display: block;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(5rem, 13vw, 10rem);
+      letter-spacing: 0.03em;
+      color: transparent;
+      -webkit-text-stroke: 1.5px var(--terracotta);
+    }
+
     .hero-name .last {
       display: block;
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(5rem, 14vw, 11rem);
-      font-weight: 700;
-      letter-spacing: -0.02em;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(5rem, 13vw, 10rem);
+      letter-spacing: 0.03em;
       color: var(--terracotta);
-      -webkit-text-stroke: 0;
-    }
-
-    .hero-bottom {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-      flex-wrap: wrap;
-      gap: 1rem;
-    }
-
-    .hero-tagline {
-      font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase;
-      color: var(--terracotta); font-weight: 300;
     }
 
     .hero-focus {
       display: flex;
       align-items: center;
       flex-wrap: wrap;
-      gap: 0.6rem;
-      margin-bottom: 2.5rem;
+      gap: 0.5rem;
+      margin-bottom: 2rem;
     }
 
     .hero-focus-label {
-      font-size: 10px;
-      letter-spacing: 0.22em;
-      text-transform: uppercase;
-      color: var(--terracotta);
-      margin-right: 0.5rem;
+      font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase;
+      color: var(--terracotta); opacity: 0.6; margin-right: 0.3rem;
     }
 
     .hero-focus-item {
-      font-size: 11px;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
+      font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase;
       color: var(--terracotta);
-      border: 1px solid rgba(217, 119, 78, 0.45);
-      padding: 0.25rem 0.65rem;
-      border-radius: 999px;
+      border: 1px solid rgba(217, 119, 78, 0.4);
+      padding: 0.2rem 0.6rem; border-radius: 999px;
+    }
+
+    .hero-bottom {
+      display: flex; justify-content: space-between; align-items: flex-end;
+      flex-wrap: wrap; gap: 1rem;
+    }
+
+    .hero-tagline {
+      font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--terracotta); font-weight: 300; opacity: 0.8;
     }
 
     .hero-contact { display: flex; gap: 1.5rem; flex-wrap: wrap; }
     .hero-contact a {
       font-size: 12px; color: var(--terracotta);
-      border-bottom: 1px solid rgba(217, 119, 78, 0.45); transition: opacity 0.2s;
+      border-bottom: 1px solid rgba(217, 119, 78, 0.4); transition: opacity 0.2s;
     }
-    .hero-contact a:hover { color: var(--terracotta); opacity: 0.7; }
+    .hero-contact a:hover { opacity: 0.7; }
 
     /* ── SECTION WRAPPER ── */
-    .section-block {
-      padding: 4rem;
-      border-bottom: 1px solid var(--line);
-    }
+    .section-block { padding: 4rem; border-bottom: 1px solid var(--line); }
 
     .section-header {
-      display: flex; align-items: baseline; gap: 1.5rem;
-      margin-bottom: 2.5rem;
+      display: flex; align-items: baseline; gap: 1.5rem; margin-bottom: 2.5rem;
     }
 
     .section-title {
       font-family: 'Playfair Display', serif;
-      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-size: clamp(1.6rem, 3.5vw, 2.4rem);
       font-weight: 400; letter-spacing: -0.01em;
     }
 
@@ -149,34 +141,29 @@
       color: var(--faint); font-weight: 400;
     }
 
-    /* ── FEATURED PROJECTS ── */
+    /* ── PROJEKTER — 2 kolonner ── */
     .projects-grid {
-      display: flex;
-      flex-direction: column;
-      gap: 2.5rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1px;
+      background: var(--line);
+      border: 1px solid var(--line);
     }
 
     .project-card {
       background: var(--bg);
-      border-top: 1px solid var(--line);
       cursor: pointer;
       transition: background 0.2s;
-      display: grid;
-      grid-template-columns: minmax(280px, 0.95fr) 1.05fr;
-      min-height: 430px;
+      display: flex;
+      flex-direction: column;
     }
-    .project-card:last-child { border-bottom: 1px solid var(--line); }
     .project-card:hover { background: #ebe7df; }
 
     .project-img {
-      width: 100%;
-      min-height: 430px;
+      width: 100%; aspect-ratio: 16/10;
       background: var(--tag-bg);
-      position: relative;
-      overflow: hidden;
-      display: flex;
-      align-items: flex-end;
-      padding: 1.5rem;
+      position: relative; overflow: hidden;
+      display: flex; align-items: flex-end; padding: 1rem;
     }
 
     .project-card:nth-child(1) .project-img { background: #d8e0d4; }
@@ -196,78 +183,56 @@
 
     .project-num {
       position: relative; z-index: 1;
-      font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase;
+      font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase;
       color: rgba(255,255,255,0.8);
     }
 
-    .project-info {
-      padding: 3rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      border-left: 1px solid var(--line);
-    }
+    .project-info { padding: 1.4rem 1.4rem 1rem; flex: 1; }
 
     .project-title {
       font-family: 'Playfair Display', serif;
-      font-size: clamp(2.2rem, 5vw, 4.4rem);
-      font-weight: 400;
-      line-height: 0.95;
-      letter-spacing: -0.03em;
-      margin-bottom: 1rem;
-      max-width: 720px;
+      font-size: 1.3rem; font-weight: 400; line-height: 1.15;
+      margin-bottom: 0.3rem;
     }
 
     .project-org {
-      font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase;
-      color: var(--muted); margin-bottom: 1.4rem;
+      font-size: 10.5px; letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--muted); margin-bottom: 0.8rem;
     }
 
-    .project-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 1.5rem; }
+    .project-tags { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-bottom: 0.8rem; }
     .project-tag {
-      font-size: 10.5px; color: var(--muted);
-      border: 1px solid var(--line); padding: 0.2rem 0.6rem; border-radius: 999px;
+      font-size: 10px; color: var(--muted);
+      border: 1px solid var(--line); padding: 0.15rem 0.5rem; border-radius: 999px;
     }
 
     .project-toggle {
-      font-size: 11px;
-      color: var(--muted);
-      display: flex;
-      align-items: center;
-      gap: 0.3rem;
-      cursor: pointer;
-      margin-top: 0.5rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
+      font-size: 11px; color: var(--muted);
+      display: flex; align-items: center; gap: 0.3rem;
+      letter-spacing: 0.08em; text-transform: uppercase; padding-bottom: 1rem;
     }
 
     .project-arrow { transition: transform 0.3s; display: inline-block; }
     .project-card.open .project-arrow { transform: rotate(180deg); }
 
     .project-detail {
-      max-height: 0;
-      overflow: hidden;
+      max-height: 0; overflow: hidden;
       transition: max-height 0.4s ease;
-      border-top: 0px solid var(--line);
     }
     .project-detail.open {
-      max-height: 700px;
+      max-height: 600px;
       border-top: 1px solid var(--line);
     }
-    .project-detail-inner { padding: 1rem 0 0; font-size: 13px; color: var(--muted); line-height: 1.7; }
-    .project-detail-inner strong { color: var(--text); font-weight: 500; display: block; margin-bottom: 0.4rem; }
 
-    /* Sub-projekter */
-    .sub-projects { margin-top: 0.8rem; }
-    .sub-project {
-      padding: 0.7rem 0;
-      border-top: 1px solid var(--line);
-      font-size: 12px; color: var(--muted);
-    }
+    .project-detail-inner { padding: 1.2rem 1.4rem; font-size: 13px; color: var(--muted); line-height: 1.7; }
+    .project-detail-inner strong { color: var(--text); font-weight: 500; display: block; margin-bottom: 0.5rem; }
+
+    .sub-projects { margin-top: 0.6rem; }
+    .sub-project { padding: 0.6rem 0; border-top: 1px solid var(--line); font-size: 12px; color: var(--muted); }
     .sub-project:first-child { border-top: none; }
-    .sub-project-name { font-weight: 500; color: var(--text); font-size: 12px; }
+    .sub-project-name { font-weight: 500; color: var(--text); font-size: 12px; margin-bottom: 0.2rem; }
 
-    /* ── DARK SECTION — Om mig ── */
+    /* ── DARK SECTION ── */
     .dark-section {
       background: var(--terracotta);
       color: var(--burgundy);
@@ -276,35 +241,29 @@
     }
 
     .dark-section .section-title { color: var(--burgundy); }
-    .dark-section .section-subtitle { color: rgba(107, 23, 61, 0.7); }
+    .dark-section .section-subtitle { color: rgba(107, 23, 61, 0.6); }
 
     .about-grid {
       display: grid;
-      grid-template-columns: 320px 1fr;
+      grid-template-columns: 280px 1fr;
       gap: 4rem;
       align-items: start;
       margin-top: 3rem;
     }
 
-    /* Foto */
     .about-photo {
       width: 100%; aspect-ratio: 3/4;
       background: rgba(107, 23, 61, 0.12);
-      overflow: hidden; position: relative;
-      border-radius: 2px;
+      overflow: hidden; position: relative; border-radius: 2px;
     }
 
-    /* Udskift src="dit-billede.jpg" med dit rigtige foto */
-    .about-photo img {
-      width: 100%; height: 100%; object-fit: cover;
-      display: block;
-    }
+    .about-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
     .photo-placeholder {
-      width: 100%; height: 100%;
+      position: absolute; inset: 0;
       display: flex; align-items: center; justify-content: center;
       font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase;
-      color: rgba(107, 23, 61, 0.6);
+      color: rgba(107, 23, 61, 0.5);
     }
 
     .about-text { padding-top: 0.5rem; }
@@ -313,52 +272,39 @@
       font-family: 'Playfair Display', serif;
       font-size: clamp(1.4rem, 3vw, 2rem);
       font-weight: 400; font-style: italic;
-      color: var(--burgundy);
-      margin-bottom: 2rem;
-      line-height: 1.3;
+      color: var(--burgundy); margin-bottom: 1.8rem; line-height: 1.3;
     }
 
     .about-body {
-      font-size: 14.5px; color: var(--burgundy);
-      line-height: 1.8; margin-bottom: 3rem;
+      font-size: 14px; color: var(--burgundy);
+      line-height: 1.8; margin-bottom: 1.2rem; opacity: 0.85;
     }
 
-    /* To-kolonne grid til education + skills */
     .about-grid-2 {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2.5rem;
-      padding-top: 2rem;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem;
+      padding-top: 2rem; margin-top: 1.5rem;
       border-top: 1px solid var(--dark-line);
     }
 
     .about-col-title {
       font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase;
-      color: rgba(107, 23, 61, 0.7); font-weight: 500; margin-bottom: 1rem;
+      color: rgba(107, 23, 61, 0.6); font-weight: 500; margin-bottom: 1rem;
     }
 
     .about-item { margin-bottom: 0.8rem; }
     .about-item-name { font-size: 13px; font-weight: 500; color: var(--burgundy); }
-    .about-item-sub { font-size: 12px; color: rgba(107, 23, 61, 0.75); }
+    .about-item-sub { font-size: 12px; color: rgba(107, 23, 61, 0.7); }
 
-    /* Skills tags i mørk sektion */
-    .skill-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.4rem; }
+    .skill-tags { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.4rem; }
     .skill-tag {
       font-size: 11px; color: var(--burgundy);
-      border: 1px solid rgba(107, 23, 61, 0.28); padding: 0.2rem 0.6rem; border-radius: 2px;
+      border: 1px solid rgba(107, 23, 61, 0.25); padding: 0.2rem 0.6rem; border-radius: 2px;
     }
 
-    /* ── ERFARING + UDDANNELSE ── */
-    .two-col-section {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 0;
-    }
+    /* ── EXPERIENCE ── */
+    .two-col-section { display: grid; grid-template-columns: 1fr 1fr; }
 
-    .col-block {
-      padding: 4rem;
-      border-right: 1px solid var(--line);
-    }
+    .col-block { padding: 4rem; border-right: 1px solid var(--line); }
     .col-block:last-child { border-right: none; }
 
     .col-title {
@@ -368,7 +314,6 @@
 
     .entry { margin-bottom: 1.8rem; padding-bottom: 1.8rem; border-bottom: 1px solid var(--line); }
     .entry:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
-
     .entry-year { font-size: 11px; color: var(--faint); margin-bottom: 0.2rem; }
     .entry-title { font-family: 'Playfair Display', serif; font-size: 15px; font-weight: 400; margin-bottom: 0.15rem; }
     .entry-org { font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 0.4rem; }
@@ -382,54 +327,57 @@
       padding: 2rem 4rem;
       display: flex; justify-content: space-between;
       font-size: 11px; letter-spacing: 0.08em;
+      opacity: 0.9;
     }
 
     /* ── MOBIL ── */
     @media (max-width: 768px) {
-      nav, .section-block, .dark-section, footer { padding-left: 1.5rem; padding-right: 1.5rem; }
-      .hero { padding: 3rem 1.5rem 3rem; }
-      .project-card { grid-template-columns: 1fr; min-height: 0; }
-      .project-img { min-height: 320px; }
-      .project-info { padding: 2rem 0 2.5rem; border-left: none; }
+      nav, .section-block, .dark-section, .col-block, footer { padding-left: 1.5rem; padding-right: 1.5rem; }
+      .hero { padding: 3rem 1.5rem; }
+      .projects-grid { grid-template-columns: 1fr; }
       .about-grid { grid-template-columns: 1fr; gap: 2rem; }
       .about-grid-2 { grid-template-columns: 1fr; }
       .two-col-section { grid-template-columns: 1fr; }
-      .col-block { padding: 2rem 1.5rem; border-right: none; border-bottom: 1px solid var(--line); }
-    }
-
-    @media (max-width: 480px) {
-      .project-img { min-height: 260px; }
+      .col-block { border-right: none; border-bottom: 1px solid var(--line); padding: 2.5rem 1.5rem; }
     }
   </style>
 </head>
 <body>
 
-  <!-- NAV -->
   <nav>
     <span class="nav-name">Karla Hornum Wohlert</span>
     <div class="nav-links">
       <a href="#selected-work">Work</a>
       <a href="#about">Perspective</a>
-      <a href="#about">Education &amp; Skills</a>
+      <a href="#experience">Experience</a>
     </div>
   </nav>
 
-  <!-- HERO -->
   <header class="hero">
     <p class="hero-label">Portfolio &amp; CV · 2026</p>
     <div class="hero-name">
       <span class="first">Karla</span>
+      <span class="middle">Hornum</span>
       <span class="last">Wohlert</span>
     </div>
-    <div class="hero-focus" aria-label="Current focus areas">
-      <span class="hero-focus-label">Current Focus</span>
-      <span class="hero-focus-item">Health Design</span>
-      <span class="hero-focus-item">AI &amp; Public Health</span>
+    <div class="hero-focus">
+      <span class="hero-focus-label">Interest Areas</span>
+      <span class="hero-focus-item">Digital Health</span>
+      <span class="hero-focus-item">Public Health</span>
+      <span class="hero-focus-item">AI &amp; New Technology</span>
       <span class="hero-focus-item">Systems Thinking</span>
       <span class="hero-focus-item">Social Innovation</span>
+      <span class="hero-focus-item">Peacebuilding</span>
+      <span class="hero-focus-item">Social Prescribing</span>
+      <span class="hero-focus-item">Product Development</span>
+      <span class="hero-focus-item">Futures &amp; Change</span>
+      <span class="hero-focus-item">Interdisciplinarity</span>
+      <span class="hero-focus-item">Communication &amp; Relations</span>
+      <span class="hero-focus-item">Planetary Health</span>
+      <span class="hero-focus-item">Conflict &amp; Security</span>
     </div>
     <div class="hero-bottom">
-      <p class="hero-tagline">Public Health Science &middot; Junior Consultant &middot; Currently based in Copenhagen</p>
+      <p class="hero-tagline">Public Health Science &middot; Junior Consultant &middot; Copenhagen</p>
       <div class="hero-contact">
         <a href="mailto:Karlahornum@gmail.com">Karlahornum@gmail.com</a>
         <a href="tel:+4530281474">+45 30 28 14 74</a>
@@ -447,10 +395,9 @@
 
     <div class="projects-grid">
 
-      <!-- 01 HJERTEFORENINGEN -->
+      <!-- 01 -->
       <div class="project-card" onclick="toggleProject(this)">
         <div class="project-img">
-          <!-- Udskift src="" med dit billede, fx src="hjerteforeningen.jpg" -->
           <img src="images/danish-heart-foundation.jpg" alt="The Danish Heart Foundation" onerror="this.style.display='none'">
           <span class="project-num">01</span>
         </div>
@@ -462,9 +409,7 @@
             <span class="project-tag">Iterative Process</span>
             <span class="project-tag">Stakeholder Dialogue</span>
           </div>
-          <div class="project-toggle">
-            <span class="project-arrow">↓</span> View case
-          </div>
+          <div class="project-toggle"><span class="project-arrow">↓</span> See more</div>
         </div>
         <div class="project-detail">
           <div class="project-detail-inner">
@@ -474,7 +419,7 @@
         </div>
       </div>
 
-      <!-- 02 AUSTRALIEN -->
+      <!-- 02 -->
       <div class="project-card" onclick="toggleProject(this)">
         <div class="project-img">
           <img src="images/australia.jpg" alt="Australia" onerror="this.style.display='none'">
@@ -488,9 +433,7 @@
             <span class="project-tag">Environmental Analysis</span>
             <span class="project-tag">Global Perspective</span>
           </div>
-          <div class="project-toggle">
-            <span class="project-arrow">↓</span> View case
-          </div>
+          <div class="project-toggle"><span class="project-arrow">↓</span> See more</div>
         </div>
         <div class="project-detail">
           <div class="project-detail-inner">
@@ -500,23 +443,21 @@
         </div>
       </div>
 
-      <!-- 03 NOT A BOX -->
+      <!-- 03 -->
       <div class="project-card" onclick="toggleProject(this)">
         <div class="project-img">
           <img src="images/not-a-box.jpg" alt="Not a Box" onerror="this.style.display='none'">
           <span class="project-num">03</span>
         </div>
         <div class="project-info">
-          <div class="project-title">Not a Box</div>
+          <div class="project-title">Projects I've Contributed To</div>
           <div class="project-org">Junior Consultant · 2025–present</div>
           <div class="project-tags">
             <span class="project-tag">Landscape Analysis</span>
             <span class="project-tag">Desk Research</span>
             <span class="project-tag">Workshop Design</span>
           </div>
-          <div class="project-toggle">
-            <span class="project-arrow">↓</span> View case
-          </div>
+          <div class="project-toggle"><span class="project-arrow">↓</span> See more</div>
         </div>
         <div class="project-detail">
           <div class="project-detail-inner">
@@ -528,7 +469,7 @@
               </div>
               <div class="sub-project">
                 <div class="sub-project-name">Nature on Prescription</div>
-                Workshop design, facilitation and development of strategic materials in collaboration with external partners.
+                Workshop design, facilitation and strategic materials in collaboration with external partners.
               </div>
               <div class="sub-project">
                 <div class="sub-project-name">Research &amp; Analysis</div>
@@ -539,10 +480,10 @@
         </div>
       </div>
 
-      <!-- 04 AI -->
+      <!-- 04 -->
       <div class="project-card" onclick="toggleProject(this)">
         <div class="project-img">
-          <img src="images/ai-work.jpg" alt="AI and internal AI work" onerror="this.style.display='none'">
+          <img src="images/ai-work.jpg" alt="AI" onerror="this.style.display='none'">
           <span class="project-num">04</span>
         </div>
         <div class="project-info">
@@ -553,14 +494,12 @@
             <span class="project-tag">AI Agents</span>
             <span class="project-tag">Responsible AI</span>
           </div>
-          <div class="project-toggle">
-            <span class="project-arrow">↓</span> View case
-          </div>
+          <div class="project-toggle"><span class="project-arrow">↓</span> See more</div>
         </div>
         <div class="project-detail">
           <div class="project-detail-inner">
             <strong>About</strong>
-            Responsible for internal AI initiatives including workshops, implementation of AI tools and development of AI agents for internal use. Focus on responsible implementation, ethical considerations and organisational learning.
+            Responsible for internal AI initiatives including workshops, implementation of AI tools and development of AI agents. Focus on responsible implementation, ethical considerations and organisational learning.
           </div>
         </div>
       </div>
@@ -568,35 +507,24 @@
     </div>
   </div>
 
-  <!-- DARK — ABOUT -->
+  <!-- ABOUT -->
   <div class="dark-section" id="about">
     <div class="section-header">
-      <h2 class="section-title" style="color:var(--dark-text)">Perspective</h2>
+      <h2 class="section-title">Perspective</h2>
       <span class="section-subtitle">How I work</span>
     </div>
-
     <div class="about-grid">
-
-      <!-- FOTO — upload dit billede til GitHub og ret src her -->
       <div class="about-photo">
+        <!-- Upload dit billede til GitHub i en mappe kaldet "images" og ret src -->
         <img src="images/karla-portrait.jpg" alt="Karla Hornum Wohlert" onerror="this.style.display='none'">
-        <div class="photo-placeholder">Add images/karla-portrait.jpg</div>
+        <div class="photo-placeholder">Add your photo here</div>
       </div>
-
       <div class="about-text">
         <p class="about-tagline">Turning Insight<br>into Impact.</p>
-        <p class="about-body">
-          I am studying Public Health Science at the University of Copenhagen, where I have developed a broad understanding of complex societal challenges with a particular focus on health and healthcare systems.
-        </p>
-        <p class="about-body">
-          As a generalist with a health-specialised perspective, I enjoy connecting knowledge across disciplines, translating complexity into actionable insights and creating value through collaboration. I am driven by curiosity, continuous learning and a desire to challenge myself in unfamiliar areas.
-        </p>
-        <p class="about-body">
-          This website reflects that mindset. Despite having no prior experience in web development, I taught myself the necessary skills and built the platform from the ground up.
-        </p>
-
+        <p class="about-body">I am studying Public Health Science at the University of Copenhagen, where I have developed a broad understanding of complex societal challenges with a particular focus on health and healthcare systems.</p>
+        <p class="about-body">As a generalist with a health-specialised perspective, I enjoy connecting knowledge across disciplines, translating complexity into actionable insights and creating value through collaboration. I am driven by curiosity, continuous learning and a desire to challenge myself in unfamiliar areas.</p>
+        <p class="about-body">This website reflects that mindset. Despite having no prior experience in web development, I taught myself the necessary skills and built the platform from the ground up.</p>
         <div class="about-grid-2">
-
           <div>
             <div class="about-col-title">Education</div>
             <div class="about-item">
@@ -616,10 +544,8 @@
               <div class="about-item-sub">Gefion Gymnasium · 2017–2020</div>
             </div>
           </div>
-
           <div>
             <div class="about-col-title">Skills</div>
-
             <div class="about-item">
               <div class="about-item-name">Languages</div>
               <div class="skill-tags">
@@ -627,7 +553,6 @@
                 <span class="skill-tag">English — fluent</span>
               </div>
             </div>
-
             <div class="about-item" style="margin-top:1rem">
               <div class="about-item-name">Methods</div>
               <div class="skill-tags">
@@ -636,18 +561,13 @@
                 <span class="skill-tag">Literature Review</span>
                 <span class="skill-tag">Desk Research</span>
                 <span class="skill-tag">Statistical Analysis</span>
-                <span class="skill-tag">EIA, LCA &amp; SEA</span>
                 <span class="skill-tag">Policy Brief Writing</span>
                 <span class="skill-tag">Landscape Analysis</span>
-                <span class="skill-tag">Presentation Design</span>
                 <span class="skill-tag">Fund Applications</span>
-                <span class="skill-tag">Mission Labs</span>
-                <span class="skill-tag">Conference Planning</span>
                 <span class="skill-tag">Workshop Facilitation</span>
                 <span class="skill-tag">Strategy Development</span>
               </div>
             </div>
-
             <div class="about-item" style="margin-top:1rem">
               <div class="about-item-name">Approaches</div>
               <div class="skill-tags">
@@ -660,9 +580,70 @@
                 <span class="skill-tag">Strategic</span>
               </div>
             </div>
-
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- EXPERIENCE -->
+  <div class="two-col-section" id="experience">
+    <div class="col-block">
+      <div class="col-title">Experience</div>
+      <div class="entry">
+        <div class="entry-year">2025 – present</div>
+        <div class="entry-title">Junior Consultant</div>
+        <div class="entry-org">Not a Box · Copenhagen</div>
+        <div class="entry-desc">Landscape, cultural and market analyses, fund applications and workshop facilitation on health-related projects.</div>
+        <div class="entry-tags"><span class="entry-tag">Analysis</span><span class="entry-tag">Strategy</span><span class="entry-tag">Facilitation</span></div>
+      </div>
+      <div class="entry">
+        <div class="entry-year">2024 – 2025</div>
+        <div class="entry-title">Student Assistant</div>
+        <div class="entry-org">Hjerteforeningen · Copenhagen</div>
+        <div class="entry-desc">Administrative work, communication and data management in Excel. Presented to volunteer staff.</div>
+        <div class="entry-tags"><span class="entry-tag">Administration</span><span class="entry-tag">Excel</span></div>
+      </div>
+      <div class="entry">
+        <div class="entry-year">2022 – 2024</div>
+        <div class="entry-title">Supply Teacher</div>
+        <div class="entry-org">Børnehuset Krummerne</div>
+        <div class="entry-desc">Adaptability across different work environments and strong time management skills.</div>
+      </div>
+      <div class="entry">
+        <div class="entry-year">2020 – 2021</div>
+        <div class="entry-title">Pedagogue Assistant</div>
+        <div class="entry-org">Børnehuset Columbus</div>
+        <div class="entry-desc">Responsibility, inclusivity and conflict resolution working with children and educators.</div>
+      </div>
+      <div class="entry">
+        <div class="entry-year">2019 – 2020</div>
+        <div class="entry-title">Waiter &amp; Kitchen Assistant</div>
+        <div class="entry-org">Naturtørst</div>
+        <div class="entry-desc">Customer service, sales and coordination in a busy restaurant environment.</div>
+      </div>
+    </div>
+    <div class="col-block">
+      <div class="col-title">Courses &amp; Other</div>
+      <div class="entry">
+        <div class="entry-year">2018 – 2019</div>
+        <div class="entry-title">Science Talent Programme</div>
+        <div class="entry-org">Astra / Novo Nordisk Foundation</div>
+        <div class="entry-desc">Selected for 3 talent development camps at Mærsk Mc-Kinney Møller Knowledge Centre in Sorø.</div>
+        <div class="entry-tags"><span class="entry-tag">Natural Science</span><span class="entry-tag">Talent Development</span></div>
+      </div>
+      <div class="entry">
+        <div class="entry-year">2016 – 2017</div>
+        <div class="entry-title">Project Management Certificate</div>
+        <div class="entry-org">Ryslinge Efterskole</div>
+        <div class="entry-desc">Four intensive project courses covering SWOT analysis, budgeting, rhetoric and pitch talks.</div>
+        <div class="entry-tags"><span class="entry-tag">Project Management</span><span class="entry-tag">Strategy</span></div>
+      </div>
+      <div class="entry">
+        <div class="entry-year">2021</div>
+        <div class="entry-title">Folk High School — Outdoor Life</div>
+        <div class="entry-org">Ry Højskole</div>
+        <div class="entry-desc">Friluftsliv og Kloden Kalder — outdoor life and global perspectives.</div>
       </div>
     </div>
   </div>
